@@ -32,6 +32,7 @@ Restclient is very simple so the main documentation is in docstrings in the code
     POST("http://www.example.com/",headers={'foo' : 'bar'}) # sends additional HTTP headers with the request
     POST("http://www.example.com/",accept=['application/xml','text/plain']) # specify HTTP Accept: headers
     POST("http://www.example.com/",credentials=('username','password')) # HTTP Auth
+    POST("http://www.example.com/",raw='["one","two",{"last":"three"}]',accept=['application/json','text/plain']) # define and submit a raw body as content
 
 Restclient also handles multipart file uploads nicely:
 
